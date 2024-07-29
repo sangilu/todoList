@@ -1,7 +1,6 @@
 import axios from "axios";
 import { useCallback, useState } from "react";
 import { useRouter } from "next/router";
-import Alert from "./todolist/Alert";
 
 export default function Signup() {
   const router = useRouter();

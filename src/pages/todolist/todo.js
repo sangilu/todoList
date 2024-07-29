@@ -127,7 +127,7 @@ export default function Todo() {
             일정 추가
           </button>
           <br />
-          <div className="w-5 bg-red-200">
+          <div className="w-16 pl-10 pr-10 bg-red-200">
             <ul className="text-left text-white">
               {todos.map((item, index) => (
                 <li key={index} className="py-1">

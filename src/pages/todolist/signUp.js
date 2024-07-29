@@ -1,7 +1,6 @@
 import axios from "axios";
 import { useRouter } from "next/router";
 import { useCallback, useEffect, useState } from "react";
-import Alert from "./Alert";
 
 export default function Signup() {
   const router = useRouter();
