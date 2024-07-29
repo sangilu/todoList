@@ -5,7 +5,7 @@ const pool = mysql.createPool({
   user: "root",
   password: "next1234!",
   database: "reactdb",
-  port: 3305,
+  port: 3306,
 });
 
 module.exports = pool;

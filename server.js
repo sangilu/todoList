@@ -23,6 +23,8 @@ app.prepare().then(() => {
     return handle(req, res);
   });
 
+  
+
   //해당포트에서 서버 시작
   const port = process.env.PORT || 3000;
   server.listen(port, (err) => {

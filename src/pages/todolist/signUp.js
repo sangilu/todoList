@@ -73,13 +73,9 @@ export default function Signup() {
         name: name,
       });
 
-      const result = res.data;
-      if (result.success) {
+      if (res.data?.success) {
         alert("회원가입 완료입니다.");
-        router.push({
-          pathname: "/todolist/userInfo",
-          query: { no: result.user_no },
-        });
+        router.push("/");
       } else {
         alert("회원가입 실패입니다.");
       }

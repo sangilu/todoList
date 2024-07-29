@@ -35,7 +35,7 @@ export default function Signup() {
     });
 
     const result = res.data;
-    console.log(result);
+
     if (result.success) {
       alert("로그인성공");
       router.push({
@@ -45,6 +45,10 @@ export default function Signup() {
     } else {
       alert("로그인실패");
     }
+  };
+
+  const goSign = () => {
+    router.push("/todolist/signUp");
   };
 
   return (
@@ -319,6 +323,14 @@ export default function Signup() {
                       className="block w-full max-w-xs mx-auto bg-indigo-500 hover:bg-indigo-700 focus:bg-indigo-700 text-white rounded-lg px-3 py-3 font-semibold"
                     >
                       로그인하기
+                    </button>
+                  </div>
+                  <div className="w-full px-3 mb-5">
+                    <button
+                      onClick={goSign}
+                      className="block w-full max-w-xs mx-auto bg-indigo-500 hover:bg-indigo-700 focus:bg-indigo-700 text-white rounded-lg px-3 py-3 font-semibold"
+                    >
+                      회원가입
                     </button>
                   </div>
                 </div>
